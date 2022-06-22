@@ -1,0 +1,74 @@
+@import url('http://fonts.cdnfonts.com/css/spongebob-font-condensed');
+body{
+    background-image: url(images/background.png);
+
+    font-family: 'SpongeBob Font Wide', sans-serif;
+    height: 800px;
+}
+
+#showWord{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+#guess{
+    font-family: 'SpongeBob Font Wide', sans-serif;
+    border: none;
+    font-size: 20px;
+    padding: 5px 7px 5px 7px;
+    border-radius: 5px;
+    color: #f3fe5f;
+    background-color: rgb(60, 125, 255);
+}
+
+#guess::placeholder{
+    color: #f3fe5f99;
+}
+
+#submit{
+    border: none;
+    font-family: 'SpongeBob Font Wide', sans-serif;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    color: #f3fe5f;
+    background-color: rgb(49, 49, 49);
+    transition: opacity 0.15s;
+}
+
+#submit:hover{
+    opacity: 0.8;
+}
+
+#wrongLetters{
+    margin-top: 40px;
+    width: 350px;
+    font-size: 25px;
+}
+
+#reset{
+    margin-top: 30px;
+    border: none;
+    font-size: 25px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    color: #f3fe5f;
+    background-color: rgb(49, 49, 49);
+    transition: opacity 0.15s;
+    visibility: hidden;
+}
+
+#reset:hover{
+    opacity: 0.8;
+}
+
+#hangman{
+    width: 300px;
+}
+
+#msg{
+    margin-top: 15px;
+    font-size: 45px;
+    font-weight: bold;
+}

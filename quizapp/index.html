@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container" class="container">
+        <button id="start-btn" class="start-btn" onclick="setUpGame()">Start</button>
+        <div id="game-container" class="game-container hide">
+            <div id="timer" class="timer">Time Left: 10</div>
+            <div id="question">Question</div>
+            <div class="answers-container">
+            <button id="answer1" class="answer" onclick="getResult(id)">Answer 1</button>
+            <button id="answer2" class="answer" onclick="getResult(id)">Answer 2</button>
+            <button id="answer3" class="answer" onclick="getResult(id)">Answer 3</button>
+            <button id="answer4" class="answer" onclick="getResult(id)">Answer 4</button>
+            </div>
+            <div class="next-btn-container">
+                <button id="next-btn" class="next-btn hide" onclick="setNextQuestion()">Next</button>
+            </div>
+        </div>
+        <div id="game-over" class="game-over hide">
+            <p>That concludes the quiz!</p>
+            <p id="score">Score: </p>
+            <button id="play-again" class="play-again" onclick="setUpGame()">Play Again</button>
+        </div>
+    </div>
+    <script src="questions.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
